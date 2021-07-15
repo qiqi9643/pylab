@@ -1,4 +1,6 @@
-
+#監聽鍵盤，阻塞式
+#https://codingnote.cc/zh-tw/p/114319/，蠻詳細的
+#https://pynput.readthedocs.io/en/latest/keyboard.html，官網
 
 from pynput import keyboard
 import os
@@ -7,7 +9,7 @@ import os
 def on_press(key):
     #用key.char取得文字型輸入
     try:
-        if key.char == 'a': #強制結束
+        if key.char == 'a': #按a鍵強制結束
             os._exit(1)
         else:
             print(key.char)
