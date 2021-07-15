@@ -1,0 +1,6 @@
+==keylisten.py
+你可以從這個程式，按特殊鍵，得到它的code名稱。
+
+==usekeylisten.py
+1. 得到space，處理該辦的事
+2. 用os._exit(1)強制離開listener的迴圈
